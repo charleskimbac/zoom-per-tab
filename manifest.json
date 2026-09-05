@@ -1,12 +1,21 @@
 {
   "name": "Zoom Per Tab",
-  "version": "1.02",
-  "description": "Zoom one tab without affecting other tabs of the same domain!",
+  "version": "1.1.0",
+  "description": "Choose which tabs use separate zoom. Other tabs keep Chrome's per-site zoom.",
   "background": {
     "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_icon": {
+      "128": "icon128.png"
+    },
+    "default_title": "Use separate zoom for this tab"
   },
   "manifest_version": 3,
   "icons": {
     "128": "icon128.png"
-  }
+  },
+  "permissions": [
+    "storage"
+  ]
 }
